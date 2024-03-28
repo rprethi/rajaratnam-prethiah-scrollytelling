@@ -5,10 +5,10 @@
 ## Conception:
 - Prethiah Rajaratnam
 - Sitmonternna Yi
-- 
+  
 ## Développement/programmation:
 - Prethiah Rajaratnam
-- 
+  
 ## Technologies:
 - HTML
 - CSS
