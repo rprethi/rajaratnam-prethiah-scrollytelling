@@ -1,0 +1,104 @@
+/*--Styles Généraux--*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*--Palette de couleurs--*/
+:root {
+  --noir-bleu: #040323;
+  --noir: #1a1423;
+  --violet: #3d314a;
+  --bleu-fonce: #2b3a61;
+  --bleu-pale: #54719b;
+  --violet-pale: #8a90aa;
+  --brun-pale: #bca8a1;
+  --blanc: #ffffff;
+
+  /*couleur extra*/
+  --rouge: #ff0000;
+}
+
+/*--Styles body--*/
+
+body {
+  overflow-x: hidden;
+}
+
+body.is-scrolling {
+  animation-play-state: running;
+}
+
+/*-- Styles header--*/
+
+.chap,
+.introduction {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  border: 1px solid var(--rouge);
+  overflow: hidden;
+}
+
+.introduction {
+  background: url(../img/img_arriere_plan/chapitre_00.jpg) no-repeat 0 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  color: var(--blanc);
+  position: relative;
+}
+
+.intro-texte {
+  position: absolute;
+  top: 5vh;
+  left: 5vh;
+  right: 5vh;
+  z-index: 100;
+}
+
+.intro-texte h1 {
+  font-size: 5vw;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Quicksand", sans-serif;
+  color: var(--white);
+}
+
+.info-projet {
+  font-size: 11px;
+  font-weight: 800;
+  position: absolute;
+  bottom: 1vh;
+  left: 5vh;
+  right: 5vh;
+  z-index: 150;
+  text-align: center;
+  color: var(--white);
+  font-family: "Quicksand", sans-serif;
+}
+
+/*--Animation Souris--*/
+
+.action {
+  position: absolute;
+  bottom: 60px;
+  z-index: 1000;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*--Footer--*/
+
+.credits {
+  font-size: 11px;
+  font-weight: 800;
+  z-index: 150;
+  text-align: center;
+  color: var(--noir);
+  font-family: "Quicksand", sans-serif;
+}
+
+.spritesheet {
+  height: 500vh;
+}
