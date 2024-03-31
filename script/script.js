@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 // Scrolling Body
 let chapScroll;
 const body = document.querySelector("body");
