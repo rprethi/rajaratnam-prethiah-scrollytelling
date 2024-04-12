@@ -161,3 +161,66 @@ body.is-scrolling div.spritesheet div.sprite1,
 body.is-scrolling div.spritesheet div.sprite2 {
   animation-play-state: running;
 }
+
+.text-chapitre {
+  position: absolute;
+  top: 35vh;
+  left: 35vh;
+  right: 35vh;
+  z-index: 100;
+  font-size: 25px;
+  color: var(--blanc);
+  font-family: "Quicksand", serif;
+}
+
+img {
+  border: 1px solid rgba(218, 0, 0, 0.5);
+}
+
+#chapitre1 {
+  background: url(../img/img_arriere_plan/chapitre_01.jpg) no-repeat 0 0;
+  background-size: cover;
+  background-position: 50% 100%;
+}
+
+#chapitre2 {
+  background: url(../img/img_arriere_plan/chapitre_02.jpg) no-repeat 0 0;
+  background-size: cover;
+  background-position: 50% 100%;
+}
+
+#chapitre3 {
+  background: url(../img/img_arriere_plan/chapitre_03.jpg) no-repeat 0 0;
+  background-size: cover;
+  background-position: 50% 100%;
+}
+
+#chapitre4 {
+  background: url(../img/img_arriere_plan/chapitre_04.jpg) no-repeat 0 0;
+  background-size: cover;
+  background-position: 50% 100%;
+}
+
+#chapitre5 {
+  background: url(../img/img_arriere_plan/chapitre_05.jpg) no-repeat 0 0;
+  background-size: cover;
+  background-position: 50% 100%;
+}
+
+#chapitre6 {
+  background: url(../img/img_arriere_plan/chapitre_06.jpg) no-repeat 0 0;
+  background-size: cover;
+  background-position: 50% 100%;
+}
+
+#chapitre7 {
+  background: url(../img/img_arriere_plan/chapitre_07.jpg) no-repeat 0 0;
+  background-size: cover;
+  background-position: 50% 100%;
+}
+
+#chapitre8 {
+  background: url(../img/img_arriere_plan/chapitre_08.jpg) no-repeat 0 0;
+  background-size: cover;
+  background-position: 50% 100%;
+}
