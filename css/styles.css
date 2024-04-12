@@ -78,7 +78,7 @@ body {
 
 .action {
   position: absolute;
-  bottom: 60px;
+  bottom: 10vh;
   z-index: 1000;
   left: 50%;
   transform: translateX(-50%);
@@ -96,14 +96,17 @@ body {
 /*Spritesheet*/
 
 .spritesheet {
-  height: 100vh;
+  height: 500vh;
 }
 
-/*Spritesheet 1*/
+/*Spritesheet 1
+  Hauteur image: 242px;
+  Width image: 136px;
+  Width Spritesheet: 32768px*/
 
 .sprite1 {
-  height: 242px;
-  width: 136px;
+  width: 20vw;
+  aspect-ratio: 121/68;
   background-image: url(../img/img_elements_visuels/tomber_spritesheet.png);
   animation-name: tomber;
   animation-duration: 1s;
@@ -120,15 +123,18 @@ body {
     background-position: 0 0;
   }
   100% {
-    background-position: -32768px 0;
+    background-position: -24100% 0;
   }
 }
 
-/* Spritesheet 2*/
+/* Spritesheet 2
+  Hauteur image: 1080px;
+  Width image: 1080px;
+  Width Spritesheet: -237600px*/
 
 .sprite2 {
-  height: 1080px;
-  width: 1080px;
+  width: 30vw;
+  aspect-ratio: 1/1;
   background-image: url(../img/img_elements_visuels/spritesheet.png);
   animation-name: feu;
   animation-duration: 1s;
@@ -145,7 +151,7 @@ body {
     background-position: 0 0;
   }
   100% {
-    background-position: -237600px 0;
+    background-position: -22000% 0;
   }
 }
 
