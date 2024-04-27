@@ -177,11 +177,19 @@ img {
   border: 1px solid rgba(218, 0, 0, 0.5);
 }
 
+/*---------------------------------------------------------- 
+# Chapitre 1
+----------------------------------------------------------*/ 
+
 #chapitre1 {
   background: url(../img/img_arriere_plan/chapitre_01.jpg) no-repeat 0 0;
   background-size: cover;
   background-position: 50% 100%;
 }
+
+/*---------------------------------------------------------- 
+# Chapitre 2
+----------------------------------------------------------*/ 
 
 #chapitre2 {
   background: url(../img/img_arriere_plan/chapitre_02.jpg) no-repeat 0 0;
@@ -189,11 +197,19 @@ img {
   background-position: 50% 100%;
 }
 
+/*---------------------------------------------------------- 
+# Chapitre 3
+----------------------------------------------------------*/ 
+
 #chapitre3 {
   background: url(../img/img_arriere_plan/chapitre_03.jpg) no-repeat 0 0;
   background-size: cover;
   background-position: 50% 100%;
 }
+
+/*---------------------------------------------------------- 
+# Chapitre 4
+----------------------------------------------------------*/ 
 
 #chapitre4 {
   background: url(../img/img_arriere_plan/chapitre_04.jpg) no-repeat 0 0;
@@ -201,11 +217,19 @@ img {
   background-position: 50% 100%;
 }
 
+/*---------------------------------------------------------- 
+# Chapitre 5
+----------------------------------------------------------*/ 
+
 #chapitre5 {
   background: url(../img/img_arriere_plan/chapitre_05.jpg) no-repeat 0 0;
   background-size: cover;
   background-position: 50% 100%;
 }
+
+/*---------------------------------------------------------- 
+# Chapitre 6
+----------------------------------------------------------*/ 
 
 #chapitre6 {
   background: url(../img/img_arriere_plan/chapitre_06.jpg) no-repeat 0 0;
@@ -213,11 +237,19 @@ img {
   background-position: 50% 100%;
 }
 
+/*---------------------------------------------------------- 
+# Chapitre 7
+----------------------------------------------------------*/ 
+
 #chapitre7 {
   background: url(../img/img_arriere_plan/chapitre_07.jpg) no-repeat 0 0;
   background-size: cover;
   background-position: 50% 100%;
 }
+
+/*---------------------------------------------------------- 
+# Chapitre 8
+----------------------------------------------------------*/ 
 
 #chapitre8 {
   background: url(../img/img_arriere_plan/chapitre_08.jpg) no-repeat 0 0;
