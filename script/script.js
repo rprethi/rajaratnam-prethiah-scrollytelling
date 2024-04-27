@@ -21,3 +21,4 @@ gsap.from(".action", {
   y: "-20",
   yoyo: true,
 });
+

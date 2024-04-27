@@ -97,7 +97,6 @@ img {
   border: 1px solid rgba(218, 0, 0, 0.5);
 }
 
-
 /*Gasp*/
 
 ul.technique-gsap {
@@ -192,7 +191,7 @@ body.is-scrolling div.spritesheet div.sprite2 {
 
 .text-chapitre {
   position: absolute;
-  top: 25vh;
+  top: 15vh;
   left: 25vh;
   right: 25vh;
   z-index: 100;
@@ -216,6 +215,35 @@ img {
   position: relative;
 }
 
+.lit-cadre {
+  position: absolute;
+  width: 50vw;
+  bottom: -5vh;
+  left: 24vw;
+}
+
+.lit-couverture {
+  position: absolute;
+  width: 50vw;
+  bottom: -12vh;
+  left: 30vw;
+}
+
+.lune {
+  position: absolute;
+  width: 20vw;
+  top: 10vw;
+  /* a regarder*/
+}
+
+.dort {
+  position: absolute;
+  width: 25vw;
+  bottom: 8vh;
+  left: 33vw;
+  z-index: 1;
+}
+
 /*---------------------------------------------------------- 
 # Chapitre 2
 ----------------------------------------------------------*/
@@ -225,6 +253,28 @@ img {
   background-size: cover;
   background-position: 50% 100%;
   position: relative;
+}
+
+.lit-chapitresuivant {
+  position: absolute;
+  width: 50vw;
+  bottom: -10vh;
+  left: 25vw;
+}
+
+.lit-assis {
+  position: absolute;
+  width: 25vw;
+  bottom: 10vh;
+  left: 37vw;
+  z-index: 1;
+}
+
+.etoile {
+  position: absolute;
+  width: 10vw;
+  left: 70vw;
+  bottom: 60vh;
 }
 
 /*---------------------------------------------------------- 
@@ -238,6 +288,21 @@ img {
   position: relative;
 }
 
+.debout-polaris {
+  position: absolute;
+  width: 25vw;
+  top: 20vh;
+  left: 37vw;
+  z-index: 1;
+}
+
+.etoile-avancement {
+  position: absolute;
+  width: 10vw;
+  left: 70vw;
+  bottom: 60vh;
+}
+
 /*---------------------------------------------------------- 
 # Chapitre 4
 ----------------------------------------------------------*/
@@ -247,6 +312,28 @@ img {
   background-size: cover;
   background-position: 50% 100%;
   position: relative;
+}
+
+.polaris-tombe {
+  position: absolute;
+  width: 20vw;
+  left: 41vw;
+  bottom: 20vh;
+  z-index: 1;
+}
+
+.etoile-guide {
+  position: absolute;
+  width: 10vw;
+  left: 70vw;
+  bottom: 60vh;
+}
+
+.rochequatre {
+  position: absolute;
+  left: 40vw;
+  bottom: -5vh;
+  width: 20vw;
 }
 
 /*---------------------------------------------------------- 
@@ -260,6 +347,27 @@ img {
   position: relative;
 }
 
+.etoile-tombe {
+  position: absolute;
+  width: 10vw;
+  left: 65vw;
+  bottom: 50vh;
+}
+
+.rochecinq {
+  position: absolute;
+  left: 40vw;
+  bottom: 15vh;
+  width: 20vw;
+}
+
+.villain {
+  position: absolute;
+  width: 20vw;
+  left: 25vw;
+  bottom: 30vh;
+}
+
 /*---------------------------------------------------------- 
 # Chapitre 6
 ----------------------------------------------------------*/
@@ -269,6 +377,27 @@ img {
   background-size: cover;
   background-position: 50% 100%;
   position: relative;
+}
+
+.polaris-peur {
+  position: absolute;
+  left: 40vw;
+  bottom: 15vh;
+  width: 20vw;
+}
+
+.etoile-peur {
+  position: absolute;
+  width: 10vw;
+  left: 65vw;
+  bottom: 50vh;
+}
+
+.villain-peur {
+  position: absolute;
+  width: 20vw;
+  left: 25vw;
+  bottom: 30vh;
 }
 
 /*---------------------------------------------------------- 
@@ -282,6 +411,35 @@ img {
   position: relative;
 }
 
+.danse-joie {
+  position: absolute;
+  left: 40vw;
+  bottom: 15vh;
+  width: 20vw;
+}
+
+.etoile-ours {
+  position: absolute;
+  width: 15vw;
+  right: 70vw;
+  bottom: 35vh;
+}
+
+.petit-oursun {
+  position: absolute;
+  width: 15vw;
+  right: 70vw;
+  bottom: 35vh;
+}
+
+.petit-oursdeux {
+  position: absolute;
+  width: 15vw;
+  right: 70vw;
+  bottom: 35vh;
+  opacity: 0;
+}
+
 /*---------------------------------------------------------- 
 # Chapitre 8
 ----------------------------------------------------------*/
@@ -291,4 +449,25 @@ img {
   background-size: cover;
   background-position: 50% 100%;
   position: relative;
+}
+
+.lit-cadre-fin {
+  position: absolute;
+  width: 50vw;
+  left: 24vw;
+}
+
+.lit-couverture-fin {
+  position: absolute;
+  width: 50vw;
+  top: 10vh;
+  left: 30vw;
+
+}
+
+.dort-fin {
+  position: absolute;
+  width: 25vw;
+  left: 35vw;
+  z-index: 1;
 }
