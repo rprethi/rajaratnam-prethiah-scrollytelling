@@ -93,6 +93,34 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
+img {
+  border: 1px solid rgba(218, 0, 0, 0.5);
+}
+
+
+/*Gasp*/
+
+ul.technique-gsap {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 10px;
+  font-family: monospace;
+  font-weight: 400;
+  width: auto;
+  display: inline-block;
+  padding: 10px 20px 12px 20px;
+  margin: 0;
+  max-width: 300px;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+
+ul.technique-gsap li {
+  margin: 5px 0;
+}
+
 /*Spritesheet*/
 
 .spritesheet {
@@ -164,11 +192,11 @@ body.is-scrolling div.spritesheet div.sprite2 {
 
 .text-chapitre {
   position: absolute;
-  top: 35vh;
-  left: 35vh;
-  right: 35vh;
+  top: 25vh;
+  left: 25vh;
+  right: 25vh;
   z-index: 100;
-  font-size: 25px;
+  font-size: 15px;
   color: var(--blanc);
   font-family: "Quicksand", serif;
 }
@@ -179,80 +207,88 @@ img {
 
 /*---------------------------------------------------------- 
 # Chapitre 1
-----------------------------------------------------------*/ 
+----------------------------------------------------------*/
 
 #chapitre1 {
   background: url(../img/img_arriere_plan/chapitre_01.jpg) no-repeat 0 0;
   background-size: cover;
   background-position: 50% 100%;
+  position: relative;
 }
 
 /*---------------------------------------------------------- 
 # Chapitre 2
-----------------------------------------------------------*/ 
+----------------------------------------------------------*/
 
 #chapitre2 {
   background: url(../img/img_arriere_plan/chapitre_02.jpg) no-repeat 0 0;
   background-size: cover;
   background-position: 50% 100%;
+  position: relative;
 }
 
 /*---------------------------------------------------------- 
 # Chapitre 3
-----------------------------------------------------------*/ 
+----------------------------------------------------------*/
 
 #chapitre3 {
   background: url(../img/img_arriere_plan/chapitre_03.jpg) no-repeat 0 0;
   background-size: cover;
   background-position: 50% 100%;
+  position: relative;
 }
 
 /*---------------------------------------------------------- 
 # Chapitre 4
-----------------------------------------------------------*/ 
+----------------------------------------------------------*/
 
 #chapitre4 {
   background: url(../img/img_arriere_plan/chapitre_04.jpg) no-repeat 0 0;
   background-size: cover;
   background-position: 50% 100%;
+  position: relative;
 }
 
 /*---------------------------------------------------------- 
 # Chapitre 5
-----------------------------------------------------------*/ 
+----------------------------------------------------------*/
 
 #chapitre5 {
   background: url(../img/img_arriere_plan/chapitre_05.jpg) no-repeat 0 0;
   background-size: cover;
   background-position: 50% 100%;
+  position: relative;
 }
 
 /*---------------------------------------------------------- 
 # Chapitre 6
-----------------------------------------------------------*/ 
+----------------------------------------------------------*/
 
 #chapitre6 {
   background: url(../img/img_arriere_plan/chapitre_06.jpg) no-repeat 0 0;
   background-size: cover;
   background-position: 50% 100%;
+  position: relative;
 }
 
 /*---------------------------------------------------------- 
 # Chapitre 7
-----------------------------------------------------------*/ 
+----------------------------------------------------------*/
 
 #chapitre7 {
   background: url(../img/img_arriere_plan/chapitre_07.jpg) no-repeat 0 0;
   background-size: cover;
   background-position: 50% 100%;
+  position: relative;
 }
 
 /*---------------------------------------------------------- 
 # Chapitre 8
-----------------------------------------------------------*/ 
+----------------------------------------------------------*/
 
 #chapitre8 {
   background: url(../img/img_arriere_plan/chapitre_08.jpg) no-repeat 0 0;
   background-size: cover;
   background-position: 50% 100%;
+  position: relative;
 }
