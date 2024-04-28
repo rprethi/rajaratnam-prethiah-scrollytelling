@@ -32,10 +32,19 @@ gsap
       trigger: `#chapitre1`,
     },
   })
-  .fromTo(`#lune`, { y: `-200%`, duration: 1 }, { y: 0, duration: 2 })
-  .fromTo(`#lit-cadre`, { y: `-200%`, duration: 1 }, { y: 0, duration: 2 })
-  .fromTo(`#lit-couverture`, { y: `-200%`, duration: 1 }, { y: 0, duration: 2 })
-  .fromTo(`#dort`, { y: `-200%`, duration: 1 }, { y: 0, duration: 2 })
+
+  .fromTo(`#lune`, { y: `-200vh`, duration: 1 }, { y: 0, duration: 2 })
+  .fromTo(`#lit-cadre`, { y: `-200vh`, duration: 1 }, { y: 0, duration: 2 })
+  .fromTo(
+    `#lit-couverture`,
+    { y: `-200vh`, duration: 1 },
+    { y: 0, duration: 2 }
+  )
+  .fromTo(
+    `#polaris-dort-debut`,
+    { y: `-200vh`, duration: 1 },
+    { y: 0, duration: 2 }
+  )
 
   .fromTo(
     "#chapitre1 .text-chapitre",
@@ -54,16 +63,15 @@ gsap
     },
   })
   .fromTo(
-    `.lit-chapitresuivant`,
+    `.lit-chapitre-deux`,
     { opacity: 0, duration: 1 },
     { opacity: 1, duration: 2 }
   )
   .fromTo(
-    `.lit-assis`,
+    `.polaris-lit-assis`,
     { opacity: 0, duration: 1 },
     { opacity: 1, duration: 2 }
   )
-
   .fromTo(
     `#chapitre2 .etoile`,
     { scale: 0, duration: 1 },
@@ -85,13 +93,11 @@ gsap
       trigger: `#chapitre3`,
     },
   })
-
   .fromTo(
-    `.lit-chapitresuivant`,
+    `.lit-chapitre-trois`,
     { opacity: 0, duration: 1 },
     { opacity: 1, duration: 2 }
   )
-
   .fromTo(
     `.debout-polaris`,
     { opacity: 0, duration: 1 },
@@ -115,7 +121,7 @@ gsap
   })
   .fromTo(`#etoile-guide`, { y: `-200%`, duration: 1 }, { y: 0, duration: 2 })
   .fromTo(
-    `.rochequatre`,
+    `.roche-chap-quatre`,
     { opacity: 0, duration: 1 },
     { opacity: 1, duration: 10 }
   )
@@ -141,7 +147,7 @@ gsap
     { opacity: 1, duration: 10 }
   )
   .fromTo(
-    `.rochecinq`,
+    `.roche-chap-cinq`,
     { opacity: 0, duration: 1 },
     { opacity: 1, duration: 10 }
   )
@@ -208,7 +214,7 @@ gsap
     { opacity: 1, duration: 2 }
   )
   .fromTo(
-    ".danse-joie",
+    ".polaris-joie",
     { opacity: 0, duration: 2 },
     { opacity: 1, duration: 2 }
   )
@@ -232,13 +238,17 @@ gsap
       trigger: `#chapitre8`,
     },
   })
-  .fromTo(`#lit-cadre-fin`, { y: `200%`, duration: 1 }, { y: 0, duration: 2 })
+  .fromTo(`#lit-cadre-fin`, { y: `200vh`, duration: 1 }, { y: 0, duration: 2 })
   .fromTo(
     `#lit-couverture-fin`,
-    { y: `200%`, duration: 1 },
+    { y: `200vh`, duration: 1 },
     { y: 0, duration: 2 }
   )
-  .fromTo(`#dort-fin`, { y: `200%`, duration: 1 }, { y: 0, duration: 2 })
+  .fromTo(
+    `#polaris-dort-fin`,
+    { y: `200vh`, duration: 1 },
+    { y: 0, duration: 2 }
+  )
   .fromTo(
     "#chapitre8 .text-chapitre",
     { opacity: 0, duration: 2 },

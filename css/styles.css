@@ -78,11 +78,13 @@ body {
 
 .action {
   position: absolute;
-  bottom: 10vh;
+  bottom: 15vh;
   z-index: 1000;
   left: 50%;
   transform: translateX(-50%);
 }
+
+/*--Footer--*/
 
 .credits {
   font-size: 11px;
@@ -92,6 +94,8 @@ body {
   color: var(--noir);
   font-family: "Quicksand", sans-serif;
 }
+
+/*--Bordure images--*/
 
 img {
   border: 1px solid rgba(218, 0, 0, 0.5);
@@ -118,12 +122,6 @@ ul.technique-gsap {
 
 ul.technique-gsap li {
   margin: 5px 0;
-}
-
-/*Spritesheet*/
-
-.spritesheet {
-  height: 500vh;
 }
 
 /*Spritesheet 1
@@ -182,13 +180,6 @@ ul.technique-gsap li {
   }
 }
 
-.meteorite-container {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
 /* Scroll spritesheet*/
 
 body.is-scrolling div.spritesheet div.sprite1,
@@ -196,13 +187,15 @@ body.is-scrolling div.spritesheet div.sprite2 {
   animation-play-state: running;
 }
 
+/*-- texte par chapitre--*/
+
 .text-chapitre {
   position: absolute;
   top: 15vh;
-  left: 25vh;
-  right: 25vh;
+  left: 10vh;
+  right: 10vh;
   z-index: 100;
-  font-size: 15px;
+  font-size: 2vw;
   color: var(--blanc);
   font-family: "Quicksand", serif;
 }
@@ -222,10 +215,12 @@ img {
   position: relative;
 }
 
+/*--Objets chapitre 1--*/
+
 .lit-cadre {
   position: absolute;
   width: 50vw;
-  bottom: -5vh;
+  bottom: -5vw;
   left: 24vw;
   aspect-ratio: 5/3;
 }
@@ -233,7 +228,7 @@ img {
 .lit-couverture {
   position: absolute;
   width: 50vw;
-  bottom: -12vh;
+  bottom: -7vw;
   left: 30vw;
   aspect-ratio: 5/3;
 }
@@ -241,14 +236,14 @@ img {
 .lune {
   position: absolute;
   width: 20vw;
-  top: 10vw;
+  top: 15vw;
   aspect-ratio: 1/1;
 }
 
-.dort {
+.polaris-dort-debut {
   position: absolute;
   width: 25vw;
-  bottom: 8vh;
+  bottom: 3vw;
   left: 33vw;
   z-index: 1;
   aspect-ratio: 1/1;
@@ -264,19 +259,12 @@ img {
   background-position: 50% 100%;
   position: relative;
 }
+/*-- Objets chapitre 2--*/
 
-.lit-chapitresuivant {
-  position: absolute;
-  width: 50vw;
-  bottom: -10vh;
-  left: 25vw;
-  aspect-ratio: 5/3;
-}
-
-.lit-assis {
+.polaris-lit-assis {
   position: absolute;
   width: 25vw;
-  bottom: 10vh;
+  bottom: 5vw;
   left: 37vw;
   z-index: 1;
   aspect-ratio: 1/1;
@@ -286,10 +274,17 @@ img {
   position: absolute;
   width: 10vw;
   left: 70vw;
-  bottom: 60vh;
+  bottom: 50vh;
   aspect-ratio: 1/1;
 }
 
+.lit-chapitre-deux {
+  position: absolute;
+  width: 50vw;
+  bottom: -5vw;
+  left: 24vw;
+  aspect-ratio: 5/3;
+}
 /*---------------------------------------------------------- 
 # Chapitre 3
 ----------------------------------------------------------*/
@@ -300,11 +295,12 @@ img {
   background-position: 50% 100%;
   position: relative;
 }
+/*--Objets chapitre 3--*/
 
 .debout-polaris {
   position: absolute;
   width: 25vw;
-  top: 20vh;
+  bottom: 10vw;
   left: 37vw;
   z-index: 1;
   aspect-ratio: 1/1;
@@ -314,8 +310,16 @@ img {
   position: absolute;
   width: 10vw;
   left: 70vw;
-  bottom: 60vh;
+  bottom: 25vw;
   aspect-ratio: 1/1;
+}
+
+.lit-chapitre-trois {
+  position: absolute;
+  width: 50vw;
+  bottom: -5vw;
+  left: 24vw;
+  aspect-ratio: 5/3;
 }
 
 /*---------------------------------------------------------- 
@@ -329,18 +333,20 @@ img {
   position: relative;
 }
 
+/*--Objet chapitre 4--*/
+
 .etoile-guide {
   position: absolute;
   width: 10vw;
   left: 70vw;
-  bottom: 60vh;
+  top: 20vh;
   aspect-ratio: 1/1;
 }
 
-.rochequatre {
+.roche-chap-quatre {
   position: absolute;
   left: 40vw;
-  bottom: -5vh;
+  bottom: -5vw;
   width: 20vw;
   aspect-ratio: 1/1;
 }
@@ -356,11 +362,13 @@ img {
   position: relative;
 }
 
+/* --Objets chapitre 5--*/
+
 .polaris-atterir {
   position: absolute;
-  left: 39vw;
-  bottom: 40vh;
-  width: 20vw;
+  width: 25vw;
+  bottom: 10vw;
+  left: 37vw;
   z-index: 1;
   transform: scaleX(-1);
   aspect-ratio: 1/1;
@@ -373,11 +381,11 @@ img {
   aspect-ratio: 1/1;
 }
 
-.rochecinq {
+.roche-chap-cinq {
   position: absolute;
-  left: 40vw;
-  bottom: 15vh;
-  width: 18vw;
+  width: 25vw;
+  bottom: -5vw;
+  left: 37vw;
   aspect-ratio: 1/1;
 }
 
@@ -401,10 +409,12 @@ img {
   position: relative;
 }
 
+/*-- Objets chapitre 6--*/
+
 #chapitre6 .mot-encouragant p:first-child {
   position: absolute;
   left: 20vw;
-  top: 20vw;
+  top: 40vh;
   color: var(--blanc);
   opacity: 70%;
 }
@@ -412,22 +422,22 @@ img {
 #chapitre6 .mot-encouragant p:nth-child(2) {
   position: absolute;
   left: 30vw;
-  top: 15vw;
+  top: 35vh;
   color: var(--blanc);
 }
 
 #chapitre6 .mot-encouragant p:nth-child(3) {
   position: absolute;
-  left: 40vw;
-  top: 12vw;
+  left: 30vw;
+  top: 45vh;
   color: var(--blanc);
 }
 
 .polaris-peur {
   position: absolute;
-  left: 40vw;
-  bottom: 15vh;
-  width: 20vw;
+  width: 25vw;
+  bottom: 10vw;
+  left: 37vw;
   aspect-ratio: 1/1;
 }
 
@@ -436,14 +446,6 @@ img {
   width: 10vw;
   left: 65vw;
   bottom: 50vh;
-  aspect-ratio: 1/1;
-}
-
-.villain-peur {
-  position: absolute;
-  width: 20vw;
-  left: 25vw;
-  bottom: 30vh;
   aspect-ratio: 1/1;
 }
 
@@ -458,7 +460,9 @@ img {
   position: relative;
 }
 
-.danse-joie {
+/*-- Objets chapitre 7--*/
+
+.polaris-joie {
   position: absolute;
   left: 40vw;
   bottom: 15vh;
@@ -482,7 +486,7 @@ img {
   aspect-ratio: 1/1;
 }
 
-.petit-oursdeux {
+.petit-ours-coeur {
   position: absolute;
   width: 15vw;
   right: 70vw;
@@ -502,10 +506,12 @@ img {
   position: relative;
 }
 
+/* --Objets chapitre 8--*/
+
 .lit-cadre-fin {
   position: absolute;
   width: 50vw;
-  bottom: -5vh;
+  bottom: -5vw;
   left: 24vw;
   aspect-ratio: 5/3;
 }
@@ -513,15 +519,15 @@ img {
 .lit-couverture-fin {
   position: absolute;
   width: 50vw;
-  bottom: -12vh;
+  bottom: -7vw;
   left: 30vw;
   aspect-ratio: 5/3;
 }
 
-.dort-fin {
+.polaris-dort-fin {
   position: absolute;
   width: 25vw;
-  bottom: 8vh;
+  bottom: 3vw;
   left: 33vw;
   z-index: 1;
   aspect-ratio: 1/1;

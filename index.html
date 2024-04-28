@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <!-- Langue en francais -->
+<!-- Langue en francais -->
 <html lang="fr">
   <head>
     <!-- Ajout viewport -->
@@ -25,7 +25,7 @@
     <title>L'aventure de Polaris</title>
     <link rel="icon" type="image/png" href="img/favicon.ico" />
   </head>
-
+  <!-- ---------- Début Écran d'introduction -------- -->
   <body>
     <header id="introduction" class="introduction">
       <!-- Titre de l'histoire -->
@@ -67,6 +67,7 @@
           />
         </svg>
       </div>
+      <!-- ---------- Fin Écran d'introduction ---------- -->
 
       <!-- Informations sur le projet + auteurs -->
       <p class="info-projet">
@@ -81,6 +82,7 @@
     </header>
     <main>
       <!-- Sections par chapitres -->
+      <!-- ---------- Début Chapitre 1 ------------------ -->
       <section id="chapitre1" class="chap">
         <div class="text-chapitre">
           <p>
@@ -96,8 +98,8 @@
           alt="lune"
         />
         <img
-          class="dort"
-          id="dort"
+          class="polaris-dort-debut"
+          id="polaris-dort-debut"
           src="./img/img_personnages/dormir_gauche.png"
           alt="polaris endormit du côté gauche"
         />
@@ -115,6 +117,7 @@
             alt="la couverture du lit"
           />
         </div>
+        <!-- ---------- Technique Gasp utilisée -------------------- -->
         <ul class="technique-gsap">
           <li>Compostion des éléments du lit + Polaris</li>
           <li>Translation Y de la lune</li>
@@ -128,6 +131,9 @@
           </li>
         </ul>
       </section>
+      <!-- ---------- Fin Chapitre 1 -------------------- -->
+
+      <!-- ---------- Début Chapitre 2 ------------------ -->
       <section id="chapitre2" class="chap">
         <div class="text-chapitre">
           <p>
@@ -138,19 +144,23 @@
         </div>
         <img
           class="etoile"
+          id="etoile"
           src="./img/img_elements_visuels/etoile.png"
           alt="L'étoile guide de Polaris"
         />
         <img
-          class="lit-assis"
+          class="polaris-lit-assis"
+          id="polaris-lit-assis"
           src="./img/img_personnages/assis_coucher.png"
           alt="Polaris assis sur le lit"
         />
         <img
-          class="lit-chapitresuivant"
+          class="lit-chapitre-deux"
+          id="lit-chapitre-deux"
           src="./img/img_elements_visuels/lit/lit_complet.png"
           alt="Le lit au complet"
         />
+        <!-- ---------- Technique Gasp utilisée -------------------- -->
         <ul class="technique-gsap">
           <li>Changement d'opacité: Polaris + lit</li>
           <li>Changement d'échelle étoile</li>
@@ -164,6 +174,9 @@
           </li>
         </ul>
       </section>
+      <!-- ---------- Fin Chapitre 2 -------------------- -->
+
+      <!-- ---------- Début Chapitre 3 ------------------ -->
       <section id="chapitre3" class="chap">
         <div class="text-chapitre">
           <p>
@@ -173,19 +186,23 @@
         </div>
         <img
           class="etoile-avancement"
+          id="etoile-avancement"
           src="./img/img_elements_visuels/etoile.png"
           alt="l'étoile s'avance"
         />
         <img
           class="debout-polaris"
+          id="debout-polaris"
           src="./img/img_personnages/joie_droit.png"
           alt="Polaris est debout"
         />
         <img
-          class="lit-chapitresuivant"
+          class="lit-chapitre-trois"
+          id="lit-chapitre-trois"
           src="./img/img_elements_visuels/lit/lit_complet.png"
           alt="Le lit au complet"
         />
+        <!-- ---------- Technique Gasp utilisée -------------------- -->
         <ul class="technique-gsap">
           <li>Changement opacité: Polaris + lit</li>
           <li>Changement opacité texte chapitre</li>
@@ -198,6 +215,9 @@
           </li>
         </ul>
       </section>
+      <!-- ---------- Fin Chapitre 3 -------------------- -->
+
+      <!-- ---------- Début Chapitre 4 ------------------ -->
       <section id="chapitre4" class="chap">
         <div class="text-chapitre">
           <p>
@@ -205,6 +225,7 @@
             atterrit sur une roche, échappant ainsi à cet incident.
           </p>
         </div>
+        <!-- Spritesheet Polaris à ajouter -->
         <img
           class="etoile-guide"
           id="etoile-guide"
@@ -212,10 +233,12 @@
           alt="etoile"
         />
         <img
-          class="rochequatre"
+          class="roche-chap-quatre"
+          id="roche-chap-quatre"
           src="./img/img_elements_visuels/roche.png"
           alt="La roche sur laquelle Polaris attéri"
         />
+        <!-- ---------- Technique Gasp utilisée -------------------- -->
         <ul class="technique-gsap">
           <li>Translation axe Y de l'étoile</li>
           <li>Changement d'opacité roche</li>
@@ -229,6 +252,9 @@
           </li>
         </ul>
       </section>
+      <!-- ---------- Fin Chapitre 4 -------------------- -->
+
+      <!-- ---------- Début Chapitre 5 ------------------ -->
       <section id="chapitre5" class="chap">
         <div class="text-chapitre">
           <p>
@@ -236,21 +262,26 @@
             menace d'éteindre les étoiles et plonger le monde dans l'obscurité.
           </p>
         </div>
+        <!-- Spritesheet météorite à ajouter -->
         <img
           class="polaris-atterir"
+          id="polaris-atterir"
           src="./img/img_personnages/atterir_droit.png"
           alt="Polaris atterrit"
         />
         <img
           class="etoile-tombe"
+          id="etoile-tombe"
           src="./img/img_elements_visuels/etoile.png"
           alt="L'étoile qui guide"
         />
         <img
-          class="rochecinq"
+          class="roche-chap-cinq"
+          id="roche-chap-cinq"
           src="./img/img_elements_visuels/roche.png"
           alt="La roche sur laquelle Polaris attéri"
         />
+        <!-- ---------- Technique Gasp utilisée -------------------- -->
         <ul class="technique-gsap">
           <li>Changement d'opacité Polaris</li>
           <li>Changement d'opacité roche</li>
@@ -264,6 +295,9 @@
           </li>
         </ul>
       </section>
+      <!-- ---------- Fin Chapitre 5 -------------------- -->
+
+      <!-- ---------- Début Chapitre 6 ------------------ -->
       <section id="chapitre6" class="chap">
         <div class="text-chapitre">
           <p>
@@ -272,24 +306,25 @@
             victoire de la lumière.
           </p>
         </div>
-        <div class="mot-encouragant">
+        <!-- Spritesheet météorite à ajouter -->
+        <div class="mot-encouragant" id="mot-encouragant">
           <p>Détermination</p>
           <p>Audace</p>
           <p>Courage</p>
         </div>
         <img
           class="polaris-peur"
+          id="polaris-peur"
           src="./img/img_personnages/peur_polaris/peur_yeux_ferme.png"
           alt="Peur Milleu Polaris"
         />
         <img
           class="etoile-peur"
+          id="etoile-peur"
           src="./img/img_elements_visuels/etoile.png"
           alt="etoile"
         />
-        <div class="meteorite-container">
-          <div id="sprite2"></div>
-        </div>
+        <!-- ---------- Technique Gasp utilisée -------------------- -->
         <ul class="technique-gsap">
           <li>Apparition des mots: opacité</li>
           <li>Changement d'opacité Polaris</li>
@@ -303,6 +338,9 @@
           </li>
         </ul>
       </section>
+      <!-- ---------- Fin Chapitre 6 -------------------- -->
+
+      <!-- ---------- Début Chapitre 7 ------------------ -->
       <section id="chapitre7" class="chap">
         <div class="text-chapitre">
           <p>
@@ -311,25 +349,30 @@
           </p>
         </div>
         <img
-          class="danse-joie"
+          class="polaris-joie"
+          id="polaris-joie"
           src="./img/img_personnages/joie_gauche.png"
           alt="danse de joie fin"
         />
         <img
           class="etoile-ours"
+          id="etoile-ours"
           src="./img/img_elements_visuels/etoile.png"
           alt="etoile"
         />
         <img
           class="petit-oursun"
+          id="petit-oursun"
           src="./img/img_elements_visuels/ours_petit/petit_ours.png"
           alt="petit ours"
         />
         <img
-          class="petit-oursdeux"
+          class="petit-ours-coeur"
+          id="petit-ours-coeur"
           src="./img/img_elements_visuels/ours_petit/petit_ours_coeur.png"
           alt="petit ours coeur"
         />
+        <!-- ---------- Technique Gasp utilisée -------------------- -->
         <ul class="technique-gsap">
           <li>Changement grandeur: étoile</li>
           <li>Changement d'opacité Polaris</li>
@@ -343,6 +386,9 @@
             </ul>
           </li>
         </ul>
+        <!-- ---------- Fin Chapitre 7 -------------------- -->
+
+        <!-- ---------- Début Chapitre 8 ------------------ -->
       </section>
       <section id="chapitre8" class="chap">
         <div class="text-chapitre">
@@ -352,8 +398,8 @@
           </p>
         </div>
         <img
-          class="dort-fin"
-          id="dort-fin"
+          class="polaris-dort-fin"
+          id="polaris-dort-fin"
           src="./img/img_personnages/dormir_gauche.png"
           alt="polaris endormit du côté gauche"
         />
@@ -371,6 +417,7 @@
             alt="la couverture du lit"
           />
         </div>
+        <!-- ---------- Technique Gasp utilisée -------------------- -->
         <ul class="technique-gsap">
           <li>Compostion des élements du lit + Polaris</li>
           <li>Changement d'opacité Polaris</li>
@@ -383,6 +430,7 @@
           </li>
         </ul>
       </section>
+      <!-- ---------- Fin Chapitre 8 -------------------- -->
     </main>
     <!-- Ajout script GASP et ScrollTrigger -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -390,7 +438,7 @@
     <script src="script/script.js"></script>
     <footer>
       <!-- Footer Crédits -->
-      <div class="credits">
+      <div class="credits" id="credits">
         <p>
           Projet créé dans le cadre du cours Optimisation Web - Intégration
           multimédia - Collège Montmorency. © 2024 - Conception : Prethiah
@@ -399,7 +447,7 @@
         </p>
         <p>
           Aucune Image provenant de sources externes et aucune utilisation de
-          l'outil AI
+          l'outil AI, utilisation de Figma
         </p>
       </div>
     </footer>
