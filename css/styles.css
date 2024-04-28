@@ -182,6 +182,13 @@ ul.technique-gsap li {
   }
 }
 
+.meteorite-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
 /* Scroll spritesheet*/
 
 body.is-scrolling div.spritesheet div.sprite1,
@@ -220,6 +227,7 @@ img {
   width: 50vw;
   bottom: -5vh;
   left: 24vw;
+  aspect-ratio: 5/3;
 }
 
 .lit-couverture {
@@ -227,13 +235,14 @@ img {
   width: 50vw;
   bottom: -12vh;
   left: 30vw;
+  aspect-ratio: 5/3;
 }
 
 .lune {
   position: absolute;
   width: 20vw;
   top: 10vw;
-  /* a regarder*/
+  aspect-ratio: 1/1;
 }
 
 .dort {
@@ -242,6 +251,7 @@ img {
   bottom: 8vh;
   left: 33vw;
   z-index: 1;
+  aspect-ratio: 1/1;
 }
 
 /*---------------------------------------------------------- 
@@ -260,6 +270,7 @@ img {
   width: 50vw;
   bottom: -10vh;
   left: 25vw;
+  aspect-ratio: 5/3;
 }
 
 .lit-assis {
@@ -268,6 +279,7 @@ img {
   bottom: 10vh;
   left: 37vw;
   z-index: 1;
+  aspect-ratio: 1/1;
 }
 
 .etoile {
@@ -275,6 +287,7 @@ img {
   width: 10vw;
   left: 70vw;
   bottom: 60vh;
+  aspect-ratio: 1/1;
 }
 
 /*---------------------------------------------------------- 
@@ -294,6 +307,7 @@ img {
   top: 20vh;
   left: 37vw;
   z-index: 1;
+  aspect-ratio: 1/1;
 }
 
 .etoile-avancement {
@@ -301,6 +315,7 @@ img {
   width: 10vw;
   left: 70vw;
   bottom: 60vh;
+  aspect-ratio: 1/1;
 }
 
 /*---------------------------------------------------------- 
@@ -314,19 +329,12 @@ img {
   position: relative;
 }
 
-.polaris-tombe {
-  position: absolute;
-  width: 20vw;
-  left: 41vw;
-  bottom: 20vh;
-  z-index: 1;
-}
-
 .etoile-guide {
   position: absolute;
   width: 10vw;
   left: 70vw;
   bottom: 60vh;
+  aspect-ratio: 1/1;
 }
 
 .rochequatre {
@@ -334,6 +342,7 @@ img {
   left: 40vw;
   bottom: -5vh;
   width: 20vw;
+  aspect-ratio: 1/1;
 }
 
 /*---------------------------------------------------------- 
@@ -347,27 +356,40 @@ img {
   position: relative;
 }
 
+.polaris-atterir {
+  position: absolute;
+  left: 39vw;
+  bottom: 40vh;
+  width: 20vw;
+  z-index: 1;
+  transform: scaleX(-1);
+  aspect-ratio: 1/1;
+}
 .etoile-tombe {
   position: absolute;
   width: 10vw;
   left: 65vw;
   bottom: 50vh;
+  aspect-ratio: 1/1;
 }
 
 .rochecinq {
   position: absolute;
   left: 40vw;
   bottom: 15vh;
-  width: 20vw;
+  width: 18vw;
+  aspect-ratio: 1/1;
 }
 
-.villain {
+.mot-encouragant {
+  font-size: 20px;
+  font-weight: 800;
   position: absolute;
-  width: 20vw;
-  left: 25vw;
-  bottom: 30vh;
+  z-index: 150;
+  color: var(--blanc);
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
 }
-
 /*---------------------------------------------------------- 
 # Chapitre 6
 ----------------------------------------------------------*/
@@ -379,11 +401,34 @@ img {
   position: relative;
 }
 
+#chapitre6 .mot-encouragant p:first-child {
+  position: absolute;
+  left: 20vw;
+  top: 20vw;
+  color: var(--blanc);
+  opacity: 70%;
+}
+
+#chapitre6 .mot-encouragant p:nth-child(2) {
+  position: absolute;
+  left: 30vw;
+  top: 15vw;
+  color: var(--blanc);
+}
+
+#chapitre6 .mot-encouragant p:nth-child(3) {
+  position: absolute;
+  left: 40vw;
+  top: 12vw;
+  color: var(--blanc);
+}
+
 .polaris-peur {
   position: absolute;
   left: 40vw;
   bottom: 15vh;
   width: 20vw;
+  aspect-ratio: 1/1;
 }
 
 .etoile-peur {
@@ -391,6 +436,7 @@ img {
   width: 10vw;
   left: 65vw;
   bottom: 50vh;
+  aspect-ratio: 1/1;
 }
 
 .villain-peur {
@@ -398,6 +444,7 @@ img {
   width: 20vw;
   left: 25vw;
   bottom: 30vh;
+  aspect-ratio: 1/1;
 }
 
 /*---------------------------------------------------------- 
@@ -416,13 +463,15 @@ img {
   left: 40vw;
   bottom: 15vh;
   width: 20vw;
+  aspect-ratio: 1/1;
 }
 
 .etoile-ours {
   position: absolute;
   width: 15vw;
-  right: 70vw;
-  bottom: 35vh;
+  left: 9.5vw;
+  bottom: 37vh;
+  aspect-ratio: 1/1;
 }
 
 .petit-oursun {
@@ -430,6 +479,7 @@ img {
   width: 15vw;
   right: 70vw;
   bottom: 35vh;
+  aspect-ratio: 1/1;
 }
 
 .petit-oursdeux {
@@ -438,6 +488,7 @@ img {
   right: 70vw;
   bottom: 35vh;
   opacity: 0;
+  aspect-ratio: 1/1;
 }
 
 /*---------------------------------------------------------- 
@@ -454,20 +505,24 @@ img {
 .lit-cadre-fin {
   position: absolute;
   width: 50vw;
+  bottom: -5vh;
   left: 24vw;
+  aspect-ratio: 5/3;
 }
 
 .lit-couverture-fin {
   position: absolute;
   width: 50vw;
-  top: 10vh;
+  bottom: -12vh;
   left: 30vw;
-
+  aspect-ratio: 5/3;
 }
 
 .dort-fin {
   position: absolute;
   width: 25vw;
-  left: 35vw;
+  bottom: 8vh;
+  left: 33vw;
   z-index: 1;
+  aspect-ratio: 1/1;
 }
