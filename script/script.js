@@ -142,6 +142,11 @@ gsap
     },
   })
   .fromTo(
+    "#chapitre5 .sprite2",
+    { opacity: 0, duration: 3 },
+    { opacity: 1, duration: 3 }
+  )
+  .fromTo(
     `.etoile-tombe`,
     { opacity: 0, duration: 1 },
     { opacity: 1, duration: 10 }
@@ -151,6 +156,7 @@ gsap
     { opacity: 0, duration: 1 },
     { opacity: 1, duration: 10 }
   )
+
   .fromTo(
     `.polaris-atterir`,
     { opacity: 0, duration: 1 },
@@ -196,6 +202,11 @@ gsap
     `#chapitre6 .mot-encouragant p:nth-child(3)`,
     { opacity: 0, duration: 4 },
     { opacity: 1, duration: 4 }
+  )
+  .fromTo(
+    `#chapitre6 .sprite2`,
+    { scale: 1, duration: 1 },
+    { scale: 0, duration: 10 }
   );
 
 /*-- ---------- CHAP 7-------------------- --*/

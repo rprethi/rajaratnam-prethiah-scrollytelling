@@ -398,6 +398,14 @@ img {
   font-family: "Quicksand", sans-serif;
   text-transform: uppercase;
 }
+
+.sprite2 {
+  position: absolute;
+  bottom: 15vw;
+  left: 5vw;
+  aspect-ratio: 1/1;
+}
+
 /*---------------------------------------------------------- 
 # Chapitre 6
 ----------------------------------------------------------*/
