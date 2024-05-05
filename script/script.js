@@ -1,5 +1,11 @@
-gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(MotionPathPlugin);
+document.addEventListener("DOMContentLoaded", (event) => {
+  gsap.registerPlugin(
+    ScrollTrigger,
+    MotionPathPlugin,
+    DrawSVGPlugin,
+    MorphSVGPlugin
+  );
+});
 
 // Scrolling Body
 let chapScroll;
@@ -107,22 +113,18 @@ gsap
     "#chapitre3 .text-chapitre",
     { opacity: 0, duration: 2 },
     { opacity: 1, duration: 2 }
-  )
-  /*.to(".etoile-avancement", {
-    motionPath: {
-      path: ".motionpath-trajectoire",
-      align: ".motionpath-trajectoire",
-      autoRotate: true,
-      alignOrigin: [-0.5, 0.6],
-    },
-  })
-  .to(
-    ".etoile-avancement",
-    {
-      opacity: 0,
-    },
-    "-=0.5"
-  );*/
+  );
+
+gsap.to(".etoile-avancement", {
+  motionPath: {
+    align: ".trace",
+    path: ".trace",
+  },
+  duration: 5,
+  repeat: -1,
+  yoyo: true,
+  ease: "power1",
+});
 
 /*-- ---------- CHAP 4-------------------- --*/
 gsap
@@ -166,17 +168,7 @@ gsap
     { opacity: 0, duration: 1 },
     { opacity: 1, duration: 10 }
   )
-  .fromTo(
-    `.roche-chap-cinq`,
-    { opacity: 0, duration: 1 },
-    { opacity: 1, duration: 10 }
-  )
-
-  .fromTo(
-    `.polaris-atterir`,
-    { opacity: 0, duration: 1 },
-    { opacity: 1, duration: 10 }
-  )
+  .fromTo(`.sprite1`, { opacity: 0, duration: 1 }, { opacity: 1, duration: 10 })
   .fromTo(
     "#chapitre5 .text-chapitre",
     { opacity: 0, duration: 2 },
@@ -279,6 +271,42 @@ gsap
     "#chapitre8 .text-chapitre",
     { opacity: 0, duration: 2 },
     { opacity: 1, duration: 2 }
+  )
+  .fromTo(
+    ".path-z1",
+    {
+      drawSVG: "0% 0%",
+      strokeWidth: "10px",
+    },
+    {
+      drawSVG: "0% 100%",
+      duration: 3,
+      strokeWidth: "50px",
+    }
+  )
+  .fromTo(
+    ".path-z2",
+    {
+      drawSVG: "0% 0%",
+      strokeWidth: "10px",
+    },
+    {
+      drawSVG: "0% 100%",
+      duration: 4,
+      strokeWidth: "40px",
+    }
+  )
+  .fromTo(
+    ".path-z3",
+    {
+      drawSVG: "0% 0%",
+      strokeWidth: "10px",
+    },
+    {
+      drawSVG: "0% 100%",
+      duration: 5,
+      strokeWidth: "30px",
+    }
   );
 
 gsap
@@ -300,3 +328,52 @@ gsap
       duration: 3,
     }
   );
+
+
+  gsap.to("#chapitre4", {
+    backgroundPosition: "50% 100%",
+    ease: "none",
+    scrollTrigger: {
+      trigger: "#chapitre4",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true,
+      markers: true,
+    },
+  });
+
+  gsap.to("#paysage", {
+    y: 0.8 * 100,
+    ease: "none",
+    scrollTrigger: {
+      trigger: "#chapitre4",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true,
+      markers: true,
+    },
+  });
+
+  gsap.to("#nuage", {
+    y: 0.8 * 100,
+    ease: "none",
+    scrollTrigger: {
+      trigger: "#chapitre4",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true,
+      markers: true,
+    },
+  });
+
+  gsap.to("#chapitre4 .text-chapitre", {
+    y: 0.25 * 100,
+    ease: "none",
+    scrollTrigger: {
+      trigger: "#chapitre4",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true,
+      markers: true,
+    },
+  });
