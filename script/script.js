@@ -1,4 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(MotionPathPlugin);
 
 // Scrolling Body
 let chapScroll;
@@ -56,21 +57,20 @@ gsap
 gsap
   .timeline({
     scrollTrigger: {
+      trigger: "#chapitre2",
       pin: true,
-      scrub: true,
-      markers: true,
-      trigger: `#chapitre2`,
+      toggleActions: "play complete reverse reset",
     },
   })
   .fromTo(
     `.lit-chapitre-deux`,
     { opacity: 0, duration: 1 },
-    { opacity: 1, duration: 2 }
+    { opacity: 1, duration: 1 }
   )
   .fromTo(
     `.polaris-lit-assis`,
     { opacity: 0, duration: 1 },
-    { opacity: 1, duration: 2 }
+    { opacity: 1, duration: 1 }
   )
   .fromTo(
     `#chapitre2 .etoile`,
@@ -107,7 +107,22 @@ gsap
     "#chapitre3 .text-chapitre",
     { opacity: 0, duration: 2 },
     { opacity: 1, duration: 2 }
-  );
+  )
+  /*.to(".etoile-avancement", {
+    motionPath: {
+      path: ".motionpath-trajectoire",
+      align: ".motionpath-trajectoire",
+      autoRotate: true,
+      alignOrigin: [-0.5, 0.6],
+    },
+  })
+  .to(
+    ".etoile-avancement",
+    {
+      opacity: 0,
+    },
+    "-=0.5"
+  );*/
 
 /*-- ---------- CHAP 4-------------------- --*/
 gsap
@@ -264,4 +279,24 @@ gsap
     "#chapitre8 .text-chapitre",
     { opacity: 0, duration: 2 },
     { opacity: 1, duration: 2 }
+  );
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: "#chapitre8",
+    },
+  })
+  .fromTo(
+    "#etoile-fin",
+    {
+      y: "10vh",
+    },
+    {
+      y: "15vh",
+      ease: "power2.inOut",
+      repeat: -1,
+      yoyo: true,
+      duration: 3,
+    }
   );

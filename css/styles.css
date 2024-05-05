@@ -129,7 +129,7 @@ ul.technique-gsap li {
   Width image: 136px;
   Width Spritesheet: 32768px*/
 
-.sprite1 {
+/*.sprite1 {
   width: 20vw;
   aspect-ratio: 121/68;
   background-image: url(../img/img_elements_visuels/tomber_spritesheet.png);
@@ -149,6 +149,31 @@ ul.technique-gsap li {
   }
   100% {
     background-position: -24100% 0;
+  }
+}*/
+
+.sprite1 {
+  height: 400px;
+  width: 400px;
+  aspect-ratio: 3022/17169;
+  background-image: url('../img/img_elements_visuels/tomber_remake.png');
+  position: absolute;
+  background-position: 0 0;
+  animation-play-state: paused;
+  animation-timing-function: steps(4);
+  background-size: 100% 400%;
+  animation-name: tomber;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  border: green 3px solid;
+}
+
+@keyframes tomber {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -17169px;
   }
 }
 
@@ -306,20 +331,36 @@ img {
   aspect-ratio: 1/1;
 }
 
-.etoile-avancement {
-  position: absolute;
-  width: 10vw;
-  left: 70vw;
-  bottom: 25vw;
-  aspect-ratio: 1/1;
-}
-
 .lit-chapitre-trois {
   position: absolute;
   width: 50vw;
   bottom: -5vw;
   left: 24vw;
   aspect-ratio: 5/3;
+}
+
+#motionpath-trajectoire{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    z-index: 4;
+    height: 100vh;
+}
+
+#motionpath-trajectoire{
+    z-index: 7;
+}
+
+
+.etoile-avancement {
+  position: absolute;
+  left: 8vw;
+  top: 50vh;   
+  aspect-ratio: 1/1;
+  z-index: 10;
+  width:10vw;
+  border: 1px solid red;
 }
 
 /*---------------------------------------------------------- 
@@ -538,5 +579,13 @@ img {
   bottom: 3vw;
   left: 33vw;
   z-index: 1;
+  aspect-ratio: 1/1;
+}
+
+.etoile-fin {
+  position: absolute;
+  width: 10vw;
+  left: 70vw;
+  bottom: 50vh;
   aspect-ratio: 1/1;
 }
