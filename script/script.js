@@ -1,3 +1,5 @@
+/*---- Ajout Gasp Plugins---*/
+
 document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(
     ScrollTrigger,
@@ -39,6 +41,7 @@ gsap
       trigger: `#chapitre1`,
     },
   })
+  /* ---- Animation chapitre 1 ----- */
 
   .fromTo(`#lune`, { y: `-200vh`, duration: 1 }, { y: 0, duration: 2 })
   .fromTo(`#lit-cadre`, { y: `-200vh`, duration: 1 }, { y: 0, duration: 2 })
@@ -68,6 +71,9 @@ gsap
       toggleActions: "play complete reverse reset",
     },
   })
+
+  /* ---- Animation chapitre 2 ----- */
+
   .fromTo(
     `.lit-chapitre-deux`,
     { opacity: 0, duration: 1 },
@@ -99,6 +105,9 @@ gsap
       trigger: `#chapitre3`,
     },
   })
+
+  /* ---- Animation chapitre 3 ----- */
+
   .fromTo(
     `.lit-chapitre-trois`,
     { opacity: 0, duration: 1 },
@@ -136,6 +145,8 @@ gsap
       trigger: `#chapitre4`,
     },
   })
+  /* ---- Animation chapitre 4 ----- */
+
   .fromTo(`#etoile-guide`, { y: `-200%`, duration: 1 }, { y: 0, duration: 2 })
   .fromTo(
     `.roche-chap-quatre`,
@@ -158,6 +169,9 @@ gsap
       trigger: `#chapitre5`,
     },
   })
+
+  /* ---- Animation chapitre 5 ----- */
+
   .fromTo(
     "#chapitre5 .sprite2",
     { opacity: 0, duration: 3 },
@@ -185,6 +199,9 @@ gsap
       trigger: `#chapitre6`,
     },
   })
+
+  /* ---- Animation chapitre 6 ----- */
+
   .fromTo(
     "#chapitre6 .text-chapitre",
     { opacity: 0, duration: 2 },
@@ -226,6 +243,9 @@ gsap
       trigger: `#chapitre7`,
     },
   })
+
+  /* ---- Animation chapitre 7 ----- */
+
   .fromTo(
     "#chapitre7 .text-chapitre",
     { opacity: 0, duration: 2 },
@@ -242,10 +262,18 @@ gsap
     { scale: 0, duration: 2 }
   )
   .fromTo(
-    `#chapitre7 .petit-oursun`,
+    `#chapitre7 .petit-ours-coeur`,
     { opacity: 0, duration: 2 },
     { opacity: 1, duration: 2 }
   );
+
+let anim = gsap.to("#etoile", {
+  morphSVG: "#coeur",
+  duration: 5,
+  repeat: -1,
+  yoyo: true,
+});
+
 /*-- ---------- CHAP 8-------------------- --*/
 gsap
   .timeline({
@@ -256,6 +284,9 @@ gsap
       trigger: `#chapitre8`,
     },
   })
+
+  /* ---- Animation chapitre 8 ----- */
+
   .fromTo(`#lit-cadre-fin`, { y: `200vh`, duration: 1 }, { y: 0, duration: 2 })
   .fromTo(
     `#lit-couverture-fin`,
@@ -328,52 +359,3 @@ gsap
       duration: 3,
     }
   );
-
-
-  gsap.to("#chapitre4", {
-    backgroundPosition: "50% 100%",
-    ease: "none",
-    scrollTrigger: {
-      trigger: "#chapitre4",
-      start: "top bottom",
-      end: "bottom top",
-      scrub: true,
-      markers: true,
-    },
-  });
-
-  gsap.to("#paysage", {
-    y: 0.8 * 100,
-    ease: "none",
-    scrollTrigger: {
-      trigger: "#chapitre4",
-      start: "top bottom",
-      end: "bottom top",
-      scrub: true,
-      markers: true,
-    },
-  });
-
-  gsap.to("#nuage", {
-    y: 0.8 * 100,
-    ease: "none",
-    scrollTrigger: {
-      trigger: "#chapitre4",
-      start: "top bottom",
-      end: "bottom top",
-      scrub: true,
-      markers: true,
-    },
-  });
-
-  gsap.to("#chapitre4 .text-chapitre", {
-    y: 0.25 * 100,
-    ease: "none",
-    scrollTrigger: {
-      trigger: "#chapitre4",
-      start: "top bottom",
-      end: "bottom top",
-      scrub: true,
-      markers: true,
-    },
-  });

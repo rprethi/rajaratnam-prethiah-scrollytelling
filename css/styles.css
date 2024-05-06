@@ -98,7 +98,7 @@ body {
 /*--Bordure images--*/
 
 img {
-  border: 1px solid rgba(218, 0, 0, 0.5);
+  border: 1px solid var(--rouge);
 }
 
 /*Gasp*/
@@ -124,6 +124,8 @@ ul.technique-gsap li {
   margin: 5px 0;
 }
 
+/*----Spritesheet 1 Polaris marche----*/
+
 .sprite1 {
   position: absolute;
   aspect-ratio: 1/1;
@@ -136,10 +138,10 @@ ul.technique-gsap li {
   animation-timing-function: steps(5);
   animation-play-state: paused;
   z-index: 1;
-  border: green 3px solid;
   width: 25vw;
   bottom: 10vw;
   left: 37vw;
+  border: 1px solid var(--rouge);
 }
 
 @keyframes marche {
@@ -150,6 +152,8 @@ ul.technique-gsap li {
     background-position: 0 -2000%;
   }
 }
+
+/*----Spritesheet 2 météorite----*/
 
 .sprite2 {
   width: 30vw;
@@ -163,6 +167,9 @@ ul.technique-gsap li {
   animation-play-state: paused;
   background-size: 22000% 100%;
   position: absolute;
+  border: 1px solid var(--rouge);
+  bottom: 15vw;
+  left: 5vw;
 }
 
 @keyframes feu {
@@ -192,10 +199,6 @@ body.is-scrolling div.spritesheet div.sprite2 {
   font-size: 2vw;
   color: var(--blanc);
   font-family: "Quicksand", serif;
-}
-
-img {
-  border: 1px solid rgba(218, 0, 0, 0.5);
 }
 
 /*---------------------------------------------------------- 
@@ -320,7 +323,6 @@ img {
   width: 10vw;
   bottom: 30vw;
   right: 30vw;
-  border: 1px solid red;
 }
 
 /*---------------------------------------------------------- 
@@ -329,10 +331,10 @@ img {
 
 #chapitre4 {
   background: url(../img/img_arriere_plan/chapitre_04.jpg) no-repeat 0 0;
-  background-size: cover;  
+  background-size: cover;
   background-attachment: scroll;
   background-position: 50% 100%;
-  position: relative; 
+  position: relative;
   overflow: hidden;
   background-repeat: no-repeat;
 }
@@ -355,7 +357,6 @@ img {
   aspect-ratio: 1/1;
 }
 
-
 /*---------------------------------------------------------- 
 # Chapitre 5
 ----------------------------------------------------------*/
@@ -377,33 +378,6 @@ img {
   aspect-ratio: 1/1;
 }
 
-.roche-chap-cinq {
-  position: absolute;
-  width: 25vw;
-  bottom: -5vw;
-  left: 37vw;
-  aspect-ratio: 1/1;
-}
-
-/* ---- Animation chapitre 3 ----- */
-
-.mot-encouragant {
-  font-size: 20px;
-  font-weight: 800;
-  position: absolute;
-  z-index: 150;
-  color: var(--blanc);
-  font-family: "Quicksand", sans-serif;
-  text-transform: uppercase;
-}
-
-.sprite2 {
-  position: absolute;
-  bottom: 15vw;
-  left: 5vw;
-  aspect-ratio: 1/1;
-}
-
 /*---------------------------------------------------------- 
 # Chapitre 6
 ----------------------------------------------------------*/
@@ -416,6 +390,16 @@ img {
 }
 
 /*-- Objets chapitre 6--*/
+
+.mot-encouragant {
+  font-size: 20px;
+  font-weight: 800;
+  position: absolute;
+  z-index: 150;
+  color: var(--blanc);
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+}
 
 #chapitre6 .mot-encouragant p:first-child {
   position: absolute;
@@ -484,12 +468,18 @@ img {
   aspect-ratio: 1/1;
 }
 
-.petit-oursun {
+/* --Morphing Svg chapitre 7--*/
+
+#coeur {
+  visibility: hidden;
+}
+
+svg {
   position: absolute;
-  width: 15vw;
-  right: 70vw;
-  bottom: 35vh;
-  aspect-ratio: 1/1;
+  width: 20vw;
+  left: 50vw;
+  bottom: 20vw;
+  border: 1px solid var(--rouge);
 }
 
 .petit-ours-coeur {
@@ -497,7 +487,6 @@ img {
   width: 15vw;
   right: 70vw;
   bottom: 35vh;
-  opacity: 0;
   aspect-ratio: 1/1;
 }
 
@@ -547,6 +536,8 @@ img {
   aspect-ratio: 1/1;
 }
 
+/* --Draw Svg chapitre 8--*/
+
 #svg-z1 {
   top: 30vh;
   width: 15vw;
@@ -566,19 +557,4 @@ img {
   width: 5vw;
   left: 40vw;
   position: absolute;
-}
-
-
-#paysage {
-  position: relative;
-  border: 2px solid blue;
-  bottom: -100vh;
-}
-
-#nuage {
-  position: absolute;
-  width: 55vw;
-  right: -6vw;
-  top: 5vw;
-  z-index: -1;
 }
