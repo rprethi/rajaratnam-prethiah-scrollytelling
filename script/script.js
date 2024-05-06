@@ -147,17 +147,65 @@ gsap
   })
   /* ---- Animation chapitre 4 ----- */
 
-  .fromTo(`#etoile-guide`, { y: `-200%`, duration: 1 }, { y: 0, duration: 2 })
-  .fromTo(
-    `.roche-chap-quatre`,
-    { opacity: 0, duration: 1 },
-    { opacity: 1, duration: 10 }
-  )
+  .fromTo(`#nuage`, { y: `-500%`, duration: 1 }, { x: 0, duration: 1 }) 
+  .fromTo(`#nuage01`, { y: `-400%`, duration: 1 }, { x: 0, duration: 1 })
+  .fromTo(`#nuage02`, { y: `-600%`, duration: 1 }, { x: 0, duration: 1 })
+  .fromTo('#polaris-tomber', { y: '-200vh', duration: 10 }, { y: 0, duration: 20 })
+
   .fromTo(
     "#chapitre4 .text-chapitre",
     { opacity: 0, duration: 2 },
     { opacity: 1, duration: 2 }
   );
+
+gsap.to("#chapitre4", {
+  backgroundPosition: "50% 100%",
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#chapitre4",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true,
+    markers: true,
+  },
+});
+
+gsap.to("#nuage", {
+  y: 0.25 * 100,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#chapitre4",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true,
+    markers: true,
+  },
+});
+
+gsap.to("#nuage01", {
+  y: 0.45 * 100,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#chapitre4",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true,
+    markers: true,
+  },
+});
+
+gsap.to("#nuage02", {
+  y: 0.65 * 100,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#chapitre4",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true,
+    markers: true,
+  },
+});
+
 
 /*-- ---------- CHAP 5-------------------- --*/
 gsap
