@@ -47,7 +47,7 @@ gsap
     { y: `100vh`, opacity: 0, duration: 1 },
     { y: 0, opacity: 1, duration: 10 }
   )
-  
+
   .fromTo(`#lune`, { y: `-200vh`, duration: 1 }, { y: 0, duration: 2 })
   .fromTo(`#lit-cadre`, { y: `-200vh`, duration: 1 }, { y: 0, duration: 2 })
   .fromTo(
@@ -351,6 +351,11 @@ gsap
     { y: 0, duration: 2 }
   )
   .fromTo(
+    `#constellation-fin`,
+    {opacity: 0, duration: 1 },
+    {opacity: 1, duration: 10 }
+  )
+  .fromTo(
     `#polaris-dort-fin`,
     { y: `200vh`, duration: 1 },
     { y: 0, duration: 2 }
@@ -360,6 +365,7 @@ gsap
     { opacity: 0, duration: 2 },
     { opacity: 1, duration: 2 }
   );
+
 /*.fromTo(
     ".path-z1",
     {

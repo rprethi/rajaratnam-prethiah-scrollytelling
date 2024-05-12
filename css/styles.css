@@ -385,7 +385,7 @@ body.is-scrolling div.spritesheet div.sprite2 {
   left: 25vw;
   top: 40vh;
   color: var(--violet-pale);
-  opacity: 70%;
+  text-shadow: 0 0 20px var(--violet-pale);
 }
 
 #chapitre6 .mot-encouragant p:nth-child(2) {
@@ -393,6 +393,7 @@ body.is-scrolling div.spritesheet div.sprite2 {
   left: 32vw;
   top: 35vh;
   color: var(--violet-pale);
+  text-shadow: 0 0 20px var(--violet-pale);
 }
 
 #chapitre6 .mot-encouragant p:nth-child(3) {
@@ -400,6 +401,7 @@ body.is-scrolling div.spritesheet div.sprite2 {
   left: 32vw;
   top: 45vh;
   color: var(--violet-pale);
+  text-shadow: 0 0 20px var(--violet-pale);
 }
 
 .polaris-peur {
@@ -522,6 +524,7 @@ body.is-scrolling div.spritesheet div.sprite2 {
   width: 15vw;
   left: 30vw;
   position: absolute;
+  stroke-width: 10;
 }
 
 #svg-z2 {
@@ -633,6 +636,13 @@ body.is-scrolling div.spritesheet div.sprite2 {
 
 
 .constellation {
+  position: absolute;
+  width: 20vw;
+  top: 15vw;
+  aspect-ratio: 1/1;
+}
+
+.constellation-fin {
   position: absolute;
   width: 20vw;
   top: 15vw;
