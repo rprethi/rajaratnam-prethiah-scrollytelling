@@ -84,13 +84,43 @@
         <p class="numero-chapitre">1</p>
         <!-- ---------- Élements du Chapitre 1 ------------------ -->
         <div class="constellation" id="constellation">
-          <img class="poisson" src="./img/img_elements_visuels/constellations/daulphin.png" alt="daulphin">
-          <img class="chien" src="./img/img_elements_visuels/constellations/chien.png" alt="chien">
-          <img class="draco" src="./img/img_elements_visuels/constellations/draco.png" alt="draco">
-          <img class="orion" src="./img/img_elements_visuels/constellations/orion.png" alt="orion">
-          <img class="perseus" src="./img/img_elements_visuels/constellations/perseus.png" alt="perseus">
-          <img class="major" src="./img/img_elements_visuels/constellations/ursamajor.png" alt="major">
-      </div>
+          <img
+            class="poisson"
+            src="./img/img_elements_visuels/constellations/daulphin.png"
+            alt="daulphin"
+            loading="lazy"
+          />
+          <img
+            class="chien"
+            src="./img/img_elements_visuels/constellations/chien.png"
+            alt="chien"
+            loading="lazy"
+          />
+          <img
+            class="draco"
+            src="./img/img_elements_visuels/constellations/draco.png"
+            alt="draco"
+            loading="lazy"
+          />
+          <img
+            class="orion"
+            src="./img/img_elements_visuels/constellations/orion.png"
+            alt="orion"
+            loading="lazy"
+          />
+          <img
+            class="perseus"
+            src="./img/img_elements_visuels/constellations/perseus.png"
+            alt="perseus"
+            loading="lazy"
+          />
+          <img
+            class="major"
+            src="./img/img_elements_visuels/constellations/ursamajor.png"
+            alt="major"
+            loading="lazy"
+          />
+        </div>
         <img
           class="lune"
           id="lune"
@@ -123,13 +153,13 @@
         </div>
         <!-- ---------- Technique Gasp utilisée -------------------- -->
         <ul class="technique-gsap">
-          <li>Compostion des éléments du lit + Polaris</li>
-          <li>Translation Y de la lune</li>
-          <li>Changement opacité texte chapitre</li>
           <li>
             scrollTrigger
             <ul>
-              <li>trigger=</li>
+              <li>Compostion des éléments du lit + Polaris</li>
+              <li>Translation Y de la lune</li>
+              <li>Changement opacité texte chapitre</li>
+              <li>Translation et opacité y pour les constellations</li>
             </ul>
           </li>
         </ul>
@@ -175,7 +205,12 @@
           <li>
             scrollTrigger
             <ul>
-              <li>trigger=</li>
+              <li>
+                joue en entrant et à l'envers si on revient (haut dans la page)
+              </li>
+              <li>
+                se complète après avoir passéet revient au début si on remonte
+              </li>
             </ul>
           </li>
         </ul>
@@ -226,12 +261,13 @@
 
         <!-- ---------- Technique Gasp utilisée -------------------- -->
         <ul class="technique-gsap">
-          <li>Changement opacité: Polaris + lit</li>
-          <li>Changement opacité texte chapitre</li>
+          <li>Motion path de l'étoile</li>
           <li>
             scrollTrigger
             <ul>
-              <li>trigger=</li>
+              <li>Changement opacité: Polaris + lit</li>
+              <li>Changement opacité texte chapitre</li>
+              <li>Translation Polaris en Y (loop)</li>
             </ul>
           </li>
         </ul>
@@ -241,7 +277,7 @@
       <!-- ---------- Début Chapitre 4 ------------------ -->
       <section id="chapitre4" class="chap">
         <div class="text-chapitre">
-          <p>Polaris tombe dans un trou invisible.</p>
+          <p>Polaris tombe dans un trou <strong>invisible.</strong></p>
         </div>
         <p class="numero-chapitre">4</p>
         <img
@@ -259,6 +295,13 @@
           loading="lazy"
         />
         <img
+          class="nuage02"
+          id="nuage02"
+          src="./img/img_elements_visuels/paralaxe_nuages/nuage_03.svg"
+          alt="nuage"
+          loading="lazy"
+        />
+        <img
           class="polaris-tomber"
           id="polaris-tomber"
           src="./img/img_personnages/tomber_gauche.png"
@@ -266,22 +309,21 @@
           loading="lazy"
         />
         <img
-          class="nuage02"
-          id="nuage02"
-          src="./img/img_elements_visuels/paralaxe_nuages/nuage_03.svg"
-          alt="nuage"
+          src="./img/img_arriere_plan/chapitre_04.jpg"
+          alt="paralaxe bg"
+          class="paralaxe-bg"
+          id="paralaxe-bg"
           loading="lazy"
         />
 
         <!-- ---------- Technique Gasp utilisée -------------------- -->
         <ul class="technique-gsap">
-          <li>Translation axe Y de l'étoile</li>
-          <li>Changement d'opacité roche</li>
-          <li>Changement opacité texte chapitre</li>
           <li>
             scrollTrigger
             <ul>
-              <li>trigger=</li>
+              <li>Paralaxe nuages 1,2 et 3</li>
+              <li>Polaris translation rotation Y</li>
+              <li>Paralaxe Background</li>
             </ul>
           </li>
         </ul>
@@ -293,7 +335,8 @@
         <div class="text-chapitre">
           <p>
             En avançant, Polaris croise l'ombre, une entité malveillante qui
-            menace d'éteindre les étoiles et plonger le monde dans l'obscurité.
+            menace d'éteindre les étoiles et plonger le monde dans
+            <strong>l'obscurité.</strong>
           </p>
         </div>
         <p class="numero-chapitre">5</p>
@@ -304,22 +347,13 @@
         <div class="spritesheet">
           <div class="sprite1"></div>
         </div>
-        <img
-          class="etoile-tombe"
-          id="etoile-tombe"
-          src="./img/img_elements_visuels/etoile.png"
-          alt="L'étoile qui guide"
-          loading="lazy"
-        />
         <!-- ---------- Technique Gasp utilisée -------------------- -->
         <ul class="technique-gsap">
-          <li>Changement d'opacité Polaris</li>
-          <li>Changement d'opacité roche</li>
-          <li>Changement opacité texte chapitre</li>
           <li>
             scrollTrigger
             <ul>
-              <li>trigger=</li>
+              <li>Translation X Polaris</li>
+              <li>Spritesheet météorite</li>
             </ul>
           </li>
         </ul>
@@ -336,7 +370,6 @@
           </p>
         </div>
         <p class="numero-chapitre">6</p>
-        <!-- Spritesheet météorite à ajouter -->
         <div class="spritesheet">
           <div class="sprite2" id="sprite2"></div>
         </div>
@@ -361,13 +394,13 @@
         />
         <!-- ---------- Technique Gasp utilisée -------------------- -->
         <ul class="technique-gsap">
-          <li>Apparition des mots: opacité</li>
-          <li>Changement d'opacité Polaris</li>
-          <li>Changement opacité texte chapitre</li>
+          <li>Étoile loop axe Y</li>
           <li>
             scrollTrigger
             <ul>
-              <li>trigger=</li>
+              <li>Apparition des mots: opacité</li>
+              <li>Changement d'opacité Polaris</li>
+              <li>Changement opacité texte chapitre</li>
             </ul>
           </li>
         </ul>
@@ -379,7 +412,8 @@
         <div class="text-chapitre">
           <p>
             Après leur triomphe, Polaris et Muscida dansent joyeusement. Muscida
-            révèle sa vraie forme, devenant la constellation de la Grande Ourse.
+            révèle sa vraie forme, devenant la constellation de la
+            <strong>Grande Ourse.</strong>
           </p>
         </div>
         <p class="numero-chapitre">7</p>
@@ -425,14 +459,14 @@
 
         <!-- ---------- Technique Gasp utilisée -------------------- -->
         <ul class="technique-gsap">
-          <li>Changement grandeur: étoile</li>
-          <li>Changement d'opacité Polaris</li>
-          <li>Changement d'opacité petit ours</li>
-          <li>Changement opacité texte chapitre</li>
+          <li>Motion Path étoile-coeur</li>
           <li>
             scrollTrigger
             <ul>
-              <li>trigger=</li>
+              <li>Changement grandeur: étoile</li>
+              <li>Changement d'opacité Polaris</li>
+              <li>Changement d'opacité petit ours</li>
+              <li>Changement opacité texte chapitre</li>
             </ul>
           </li>
         </ul>
@@ -449,25 +483,48 @@
         </div>
         <p class="numero-chapitre">8</p>
         <div class="constellation-fin" id="constellation-fin">
-          <img class="poisson" src="./img/img_elements_visuels/constellations/daulphin.png" alt="daulphin">
-          <img class="chien" src="./img/img_elements_visuels/constellations/chien.png" alt="chien">
-          <img class="draco" src="./img/img_elements_visuels/constellations/draco.png" alt="draco">
-          <img class="orion" src="./img/img_elements_visuels/constellations/orion.png" alt="orion">
-          <img class="perseus" src="./img/img_elements_visuels/constellations/perseus.png" alt="perseus">
-          <img class="major" src="./img/img_elements_visuels/constellations/ursamajor.png" alt="major">
-      </div>
+          <img
+            class="poisson"
+            src="./img/img_elements_visuels/constellations/daulphin.png"
+            alt="daulphin"
+            loading="lazy"
+          />
+          <img
+            class="chien"
+            src="./img/img_elements_visuels/constellations/chien.png"
+            alt="chien"
+            loading="lazy"
+          />
+          <img
+            class="draco"
+            src="./img/img_elements_visuels/constellations/draco.png"
+            alt="draco"
+            loading="lazy"
+          />
+          <img
+            class="orion"
+            src="./img/img_elements_visuels/constellations/orion.png"
+            alt="orion"
+            loading="lazy"
+          />
+          <img
+            class="perseus"
+            src="./img/img_elements_visuels/constellations/perseus.png"
+            alt="perseus"
+            loading="lazy"
+          />
+          <img
+            class="major"
+            src="./img/img_elements_visuels/constellations/ursamajor.png"
+            alt="major"
+            loading="lazy"
+          />
+        </div>
         <img
           class="polaris-dort-fin"
           id="polaris-dort-fin"
           src="./img/img_personnages/dormir_gauche.png"
           alt="polaris endormit du côté gauche"
-          loading="lazy"
-        />
-        <img
-          class="etoile-fin"
-          id="etoile-fin"
-          src="./img/img_elements_visuels/etoile.png"
-          alt="etoile"
           loading="lazy"
         />
         <div class="lit-complet-fin" id="lit-complet-fin">
@@ -578,12 +635,13 @@
         </svg>
         <!-- ---------- Technique Gasp utilisée -------------------- -->
         <ul class="technique-gsap">
-          <li>Compostion des élements du lit + Polaris</li>
-          <li>Changement d'opacité Polaris</li>
           <li>
             scrollTrigger
             <ul>
-              <li>trigger=</li>
+              <li>Compostion des élements du lit + Polaris</li>
+              <li>Changement d'opacité Polaris</li>
+              <li>Draw Svg Z</li>
+              <li>Opacité et translation y (constellations)</li>
             </ul>
           </li>
         </ul>

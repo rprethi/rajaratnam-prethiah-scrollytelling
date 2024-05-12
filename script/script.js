@@ -135,11 +135,31 @@ gsap.to(".etoile-avancement", {
     align: ".trace",
     path: ".trace",
   },
-  duration: 5,
+  duration: 10,
   repeat: -1,
   yoyo: true,
   ease: "power1",
 });
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: "#chapitre3",
+    },
+  })
+  .fromTo(
+    ".debout-polaris",
+    {
+      y: "0vh",
+    },
+    {
+      y: "-5vh",
+      ease: "power2.inOut",
+      repeat: -1,
+      yoyo: true,
+      duration: 3,
+    }
+  );
 
 /*-- ---------- CHAP 4-------------------- --*/
 gsap
@@ -153,13 +173,13 @@ gsap
   })
   /* ---- Animation chapitre 4 ----- */
 
-  .fromTo(`#nuage`, { y: `-500%`, duration: 1 }, { x: 0, duration: 1 })
-  .fromTo(`#nuage01`, { y: `-400%`, duration: 1 }, { x: 0, duration: 1 })
-  .fromTo(`#nuage02`, { y: `-600%`, duration: 1 }, { x: 0, duration: 1 })
+  .fromTo(`#nuage`, { y: `-500vh`, duration: 1 }, { x: 0, duration: 1 })
+  .fromTo(`#nuage01`, { y: `-400vh`, duration: 1 }, { x: 0, duration: 1 })
+  .fromTo(`#nuage02`, { y: `-400vh`, duration: 1 }, { x: 0, duration: 1 })
   .fromTo(
     "#polaris-tomber",
-    { y: "-200vh", duration: 10 },
-    { y: 0, duration: 20 }
+    { y: "-210vh", rotation: 0, duration: 1 },
+    { y: 0, rotation: 360, duration: 20 }
   )
 
   .fromTo(
@@ -177,6 +197,17 @@ gsap.to("#chapitre4", {
     end: "bottom top",
     scrub: true,
     markers: false,
+  },
+});
+
+gsap.to("#paralaxe-bg", {
+  y: "-50vh",
+  scrollTrigger: {
+    markers: false,
+    start: "top 90%",
+    end: "bottom 10%",
+    trigger: "#paralaxe-bg",
+    scrub: 1,
   },
 });
 
@@ -234,12 +265,8 @@ gsap
     { opacity: 0, duration: 3 },
     { opacity: 1, duration: 3 }
   )
-  .fromTo(
-    `.etoile-tombe`,
-    { opacity: 0, duration: 1 },
-    { opacity: 1, duration: 10 }
-  )
-  .fromTo(`.sprite1`, { opacity: 0, duration: 1 }, { opacity: 1, duration: 10 })
+
+  .fromTo(".sprite1", { x: "50vw", duration: 1 }, { x: "-10vw", duration: 10 })
   .fromTo(
     "#chapitre5 .text-chapitre",
     { opacity: 0, duration: 2 },
@@ -288,6 +315,26 @@ gsap
     `#chapitre6 .sprite2`,
     { scale: 1, duration: 1 },
     { scale: 0, duration: 10 }
+  );
+  
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: "#chapitre6",
+    },
+  })
+  .fromTo(
+    "#etoile-peur",
+    {
+      y: "10vh",
+    },
+    {
+      y: "15vh",
+      ease: "power2.inOut",
+      repeat: -1,
+      yoyo: true,
+      duration: 1,
+    }
   );
 
 /*-- ---------- CHAP 7-------------------- --*/
@@ -352,8 +399,8 @@ gsap
   )
   .fromTo(
     `#constellation-fin`,
-    {opacity: 0, duration: 1 },
-    {opacity: 1, duration: 10 }
+    { opacity: 0, duration: 1 },
+    { opacity: 1, duration: 10 }
   )
   .fromTo(
     `#polaris-dort-fin`,
@@ -402,23 +449,3 @@ gsap
       strokeWidth: "30px",
     }
   );*/
-
-gsap
-  .timeline({
-    scrollTrigger: {
-      trigger: "#chapitre8",
-    },
-  })
-  .fromTo(
-    "#etoile-fin",
-    {
-      y: "10vh",
-    },
-    {
-      y: "15vh",
-      ease: "power2.inOut",
-      repeat: -1,
-      yoyo: true,
-      duration: 3,
-    }
-  );
