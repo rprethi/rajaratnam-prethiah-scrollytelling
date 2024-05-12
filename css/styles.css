@@ -113,6 +113,7 @@ ul.technique-gsap {
   z-index: 1000;
   top: 0;
   left: 0;
+  display: none;
 }
 
 ul.technique-gsap li {
@@ -447,16 +448,17 @@ body.is-scrolling div.spritesheet div.sprite2 {
 
 /* --Morphing Svg chapitre 7--*/
 
-#coeur {
+/*#coeur {
   visibility: hidden;
 }
 
-svg {
+#svg2 {
   position: absolute;
   width: 20vw;
   left: 50vw;
   bottom: 20vw;
-}
+  fill: var(--violet-pale);
+}*/
 
 .petit-ours-coeur {
   position: absolute;
@@ -535,7 +537,6 @@ svg {
   position: absolute;
 }
 
-
 #nuage {
   position: absolute;
   width: 55vw;
@@ -569,4 +570,14 @@ svg {
   bottom: -50vw;
   left: 44vw;
   z-index: 100;
+}
+
+.numero-chapitre {
+  z-index: 1;
+  position: absolute;
+  font-size: 1.5vw;
+  bottom: 5vh;
+  left: 5vw;
+  font-family: "Quicksand", sans-serif;
+  color: var(--violet-pale);
 }

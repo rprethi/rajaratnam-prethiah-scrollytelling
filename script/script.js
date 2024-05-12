@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(
     ScrollTrigger,
     MotionPathPlugin,
-    DrawSVGPlugin,
-    MorphSVGPlugin
+    /*DrawSVGPlugin,
+    MorphSVGPlugin*/
   );
 });
 
@@ -37,7 +37,7 @@ gsap
     scrollTrigger: {
       pin: true,
       scrub: true,
-      markers: true,
+      markers: false,
       trigger: `#chapitre1`,
     },
   })
@@ -59,7 +59,7 @@ gsap
   .fromTo(
     "#chapitre1 .text-chapitre",
     { opacity: 0, duration: 2 },
-    { opacity: 1, duration: 2 }
+    { opacity: 1, duration: 2 },
   );
 
 /*-- ---------- CHAP 2-------------------- --*/
@@ -68,6 +68,7 @@ gsap
     scrollTrigger: {
       trigger: "#chapitre2",
       pin: true,
+      markers: false,
       toggleActions: "play complete reverse reset",
     },
   })
@@ -101,7 +102,7 @@ gsap
     scrollTrigger: {
       pin: true,
       scrub: true,
-      markers: true,
+      markers: false,
       trigger: `#chapitre3`,
     },
   })
@@ -141,7 +142,7 @@ gsap
     scrollTrigger: {
       pin: true,
       scrub: true,
-      markers: true,
+      markers: false,
       trigger: `#chapitre4`,
     },
   })
@@ -166,7 +167,7 @@ gsap.to("#chapitre4", {
     start: "top bottom",
     end: "bottom top",
     scrub: true,
-    markers: true,
+    markers: false,
   },
 });
 
@@ -178,7 +179,7 @@ gsap.to("#nuage", {
     start: "top bottom",
     end: "bottom top",
     scrub: true,
-    markers: true,
+    markers: false,
   },
 });
 
@@ -190,7 +191,7 @@ gsap.to("#nuage01", {
     start: "top bottom",
     end: "bottom top",
     scrub: true,
-    markers: true,
+    markers: false,
   },
 });
 
@@ -202,7 +203,7 @@ gsap.to("#nuage02", {
     start: "top bottom",
     end: "bottom top",
     scrub: true,
-    markers: true,
+    markers: false,
   },
 });
 
@@ -213,7 +214,7 @@ gsap
     scrollTrigger: {
       pin: true,
       scrub: true,
-      markers: true,
+      markers: false,
       trigger: `#chapitre5`,
     },
   })
@@ -243,7 +244,7 @@ gsap
     scrollTrigger: {
       pin: true,
       scrub: true,
-      markers: true,
+      markers: false,
       trigger: `#chapitre6`,
     },
   })
@@ -287,7 +288,7 @@ gsap
     scrollTrigger: {
       pin: true,
       scrub: true,
-      markers: true,
+      markers: false,
       trigger: `#chapitre7`,
     },
   })
@@ -315,12 +316,12 @@ gsap
     { opacity: 1, duration: 2 }
   );
 
-let anim = gsap.to("#etoile", {
+/*let anim = gsap.to("#etoile", {
   morphSVG: "#coeur",
   duration: 5,
   repeat: -1,
   yoyo: true,
-});
+});*/
 
 /*-- ---------- CHAP 8-------------------- --*/
 gsap
@@ -328,7 +329,7 @@ gsap
     scrollTrigger: {
       pin: true,
       scrub: true,
-      markers: true,
+      markers: false,
       trigger: `#chapitre8`,
     },
   })
@@ -351,7 +352,7 @@ gsap
     { opacity: 0, duration: 2 },
     { opacity: 1, duration: 2 }
   )
-  .fromTo(
+  /*.fromTo(
     ".path-z1",
     {
       drawSVG: "0% 0%",
@@ -386,7 +387,7 @@ gsap
       duration: 5,
       strokeWidth: "30px",
     }
-  );
+  );*/
 
 gsap
   .timeline({
