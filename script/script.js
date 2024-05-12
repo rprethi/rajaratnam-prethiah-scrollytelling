@@ -316,7 +316,7 @@ gsap
     { scale: 1, duration: 1 },
     { scale: 0, duration: 10 }
   );
-  
+
 gsap
   .timeline({
     scrollTrigger: {
