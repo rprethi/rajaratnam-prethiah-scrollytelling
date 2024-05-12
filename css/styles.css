@@ -56,13 +56,12 @@ body {
   font-size: 5vw;
   margin: 0;
   text-transform: uppercase;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Shadows Into Light", cursive;
   color: var(--white);
 }
 
 .info-projet {
   font-size: 11px;
-  font-weight: 800;
   position: absolute;
   bottom: 5vh;
   left: 5vh;
@@ -70,7 +69,7 @@ body {
   z-index: 150;
   text-align: center;
   color: var(--white);
-  font-family: "Quicksand", sans-serif;
+  font-family: "Shadows Into Light", cursive;
 }
 
 /*--Animation Souris--*/
@@ -82,7 +81,9 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-
+.action svg {
+  fill: var(--violet-pale);
+}
 /*--Footer--*/
 
 .credits {
@@ -91,7 +92,7 @@ body {
   z-index: 150;
   text-align: center;
   color: var(--blanc);
-  font-family: "Quicksand", sans-serif;
+  font-family: "Shadows Into Light", cursive;
   padding: 1vw;
   background-color: var(--bleu-fonce);
 }
@@ -192,7 +193,7 @@ body.is-scrolling div.spritesheet div.sprite2 {
   z-index: 100;
   font-size: 2vw;
   color: var(--blanc);
-  font-family: "Quicksand", serif;
+  font-family: "Shadows Into Light", cursive;
 }
 
 /*---------------------------------------------------------- 
@@ -375,30 +376,30 @@ body.is-scrolling div.spritesheet div.sprite2 {
   position: absolute;
   z-index: 150;
   color: var(--blanc);
-  font-family: "Quicksand", sans-serif;
+  font-family: "Shadows Into Light", cursive;
   text-transform: uppercase;
 }
 
 #chapitre6 .mot-encouragant p:first-child {
   position: absolute;
-  left: 20vw;
+  left: 25vw;
   top: 40vh;
-  color: var(--blanc);
+  color: var(--violet-pale);
   opacity: 70%;
 }
 
 #chapitre6 .mot-encouragant p:nth-child(2) {
   position: absolute;
-  left: 30vw;
+  left: 32vw;
   top: 35vh;
-  color: var(--blanc);
+  color: var(--violet-pale);
 }
 
 #chapitre6 .mot-encouragant p:nth-child(3) {
   position: absolute;
-  left: 30vw;
+  left: 32vw;
   top: 45vh;
-  color: var(--blanc);
+  color: var(--violet-pale);
 }
 
 .polaris-peur {
@@ -578,6 +579,62 @@ body.is-scrolling div.spritesheet div.sprite2 {
   font-size: 1.5vw;
   bottom: 5vh;
   left: 5vw;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Shadows Into Light", cursive;
   color: var(--violet-pale);
+}
+
+.poisson {
+  position: absolute;
+  bottom: 35vh;
+  width: 20vw;
+  z-index: -1;
+  left: 80vw;
+}
+
+.chien {
+  position: absolute;
+  width: 20vw;
+  z-index: -1;
+  bottom: 30vw;
+  left: 45vw;
+}
+
+.draco {
+  position: absolute;
+  width: 20vw;
+  z-index: -1;
+  bottom: 28vw;
+  left: 65vw;
+}
+
+.orion {
+  position: absolute;
+  width: 15vw;
+  z-index: -1;
+  bottom: 45vw;
+  left: 30vw;
+}
+
+.perseus {
+  position: absolute;
+  width: 15vw;
+  z-index: -1;
+  bottom: 40vw;
+  left: 15vw;
+}
+
+.major {
+  position: absolute;
+  width: 15vw;
+  z-index: -1;
+  bottom: 25vw;
+  left: 0;
+}
+
+
+.constellation {
+  position: absolute;
+  width: 20vw;
+  top: 15vw;
+  aspect-ratio: 1/1;
 }

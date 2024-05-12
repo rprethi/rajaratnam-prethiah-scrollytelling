@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(
     ScrollTrigger,
-    MotionPathPlugin,
+    MotionPathPlugin
     /*DrawSVGPlugin,
     MorphSVGPlugin*/
   );
@@ -42,7 +42,12 @@ gsap
     },
   })
   /* ---- Animation chapitre 1 ----- */
-
+  .fromTo(
+    `#constellation`,
+    { y: `100vh`, opacity: 0, duration: 1 },
+    { y: 0, opacity: 1, duration: 10 }
+  )
+  
   .fromTo(`#lune`, { y: `-200vh`, duration: 1 }, { y: 0, duration: 2 })
   .fromTo(`#lit-cadre`, { y: `-200vh`, duration: 1 }, { y: 0, duration: 2 })
   .fromTo(
@@ -59,7 +64,7 @@ gsap
   .fromTo(
     "#chapitre1 .text-chapitre",
     { opacity: 0, duration: 2 },
-    { opacity: 1, duration: 2 },
+    { opacity: 1, duration: 2 }
   );
 
 /*-- ---------- CHAP 2-------------------- --*/
@@ -148,10 +153,14 @@ gsap
   })
   /* ---- Animation chapitre 4 ----- */
 
-  .fromTo(`#nuage`, { y: `-500%`, duration: 1 }, { x: 0, duration: 1 }) 
+  .fromTo(`#nuage`, { y: `-500%`, duration: 1 }, { x: 0, duration: 1 })
   .fromTo(`#nuage01`, { y: `-400%`, duration: 1 }, { x: 0, duration: 1 })
   .fromTo(`#nuage02`, { y: `-600%`, duration: 1 }, { x: 0, duration: 1 })
-  .fromTo('#polaris-tomber', { y: '-200vh', duration: 10 }, { y: 0, duration: 20 })
+  .fromTo(
+    "#polaris-tomber",
+    { y: "-200vh", duration: 10 },
+    { y: 0, duration: 20 }
+  )
 
   .fromTo(
     "#chapitre4 .text-chapitre",
@@ -206,7 +215,6 @@ gsap.to("#nuage02", {
     markers: false,
   },
 });
-
 
 /*-- ---------- CHAP 5-------------------- --*/
 gsap
@@ -351,8 +359,8 @@ gsap
     "#chapitre8 .text-chapitre",
     { opacity: 0, duration: 2 },
     { opacity: 1, duration: 2 }
-  )
-  /*.fromTo(
+  );
+/*.fromTo(
     ".path-z1",
     {
       drawSVG: "0% 0%",
