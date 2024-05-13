@@ -371,12 +371,12 @@ gsap
     { opacity: 1, duration: 2 }
   );
 
-/*let anim = gsap.to("#etoile", {
+let anim = gsap.to("#etoile", {
   morphSVG: "#coeur",
   duration: 5,
   repeat: -1,
   yoyo: true,
-});*/
+});
 
 /*-- ---------- CHAP 8-------------------- --*/
 gsap
@@ -411,9 +411,8 @@ gsap
     "#chapitre8 .text-chapitre",
     { opacity: 0, duration: 2 },
     { opacity: 1, duration: 2 }
-  );
-
-/*.fromTo(
+  )
+  .fromTo(
     ".path-z1",
     {
       drawSVG: "0% 0%",
@@ -448,4 +447,4 @@ gsap
       duration: 5,
       strokeWidth: "30px",
     }
-  );*/
+  );

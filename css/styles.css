@@ -121,7 +121,6 @@ ul.technique-gsap {
   z-index: 1000;
   top: 0;
   left: 0;
-  display: none;
 }
 
 ul.technique-gsap li {
@@ -610,17 +609,17 @@ body.is-scrolling div.spritesheet div.sprite2 {
 
 /* --Morphing Svg chapitre 7--*/
 
-/*#coeur {
+#coeur {
   visibility: hidden;
 }
 
 #svg2 {
   position: absolute;
   width: 20vw;
-  left: 50vw;
+  left: 60vw;
   bottom: 20vw;
   fill: var(--violet-pale);
-}*/
+}
 
 .petit-ours-coeur {
   position: absolute;
