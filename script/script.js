@@ -200,17 +200,6 @@ gsap.to("#chapitre4", {
   },
 });
 
-gsap.to("#paralaxe-bg", {
-  y: "-50vh",
-  scrollTrigger: {
-    markers: false,
-    start: "top 90%",
-    end: "bottom 10%",
-    trigger: "#paralaxe-bg",
-    scrub: 1,
-  },
-});
-
 gsap.to("#nuage", {
   y: 0.25 * 100,
   ease: "none",
